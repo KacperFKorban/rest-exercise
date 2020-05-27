@@ -20,6 +20,7 @@ object Main extends IOApp {
     case GET -> Root / "crypto" =>
       Ok(
         """<form method="post">
+          |<span>Enter crypto codes:</span>
           |<input type="text" id="names" name="names">
           |<input type="submit" value="Submit">
           |</form>""".stripMargin, `Content-Type`(MediaType.text.html))
